@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Delegate View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ex2" id="Y6W-OH-hqX" customClass="DelegateViewController" customModule="formazione" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T7s-Jk-RsN">
+                                <rect key="frame" x="39.333333333333343" y="165" width="314.33333333333326" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iEL-hI-eTV">
+                                <rect key="frame" x="39" y="255" width="314.33333333333326" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="valore" textLabel="ork-sc-pfs" style="IBUITableViewCellStyleDefault" id="w7c-UQ-cjg">
+                                        <rect key="frame" x="0.0" y="50" width="314.33333333333326" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w7c-UQ-cjg" id="3AT-fc-unB">
+                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333326" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ork-sc-pfs">
+                                                    <rect key="frame" x="16" y="0.0" width="282.33333333333326" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iEL-hI-eTV" firstAttribute="top" secondItem="T7s-Jk-RsN" secondAttribute="bottom" constant="196" id="5in-tZ-Pb5"/>
+                            <constraint firstItem="T7s-Jk-RsN" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.8" id="Atd-yY-hhQ"/>
+                            <constraint firstItem="iEL-hI-eTV" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.8" id="KAy-14-5Mr"/>
+                            <constraint firstItem="iEL-hI-eTV" firstAttribute="top" secondItem="T7s-Jk-RsN" secondAttribute="bottom" constant="196" id="RU3-vZ-qzr"/>
+                            <constraint firstItem="iEL-hI-eTV" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="SsU-f4-c3A"/>
+                            <constraint firstItem="T7s-Jk-RsN" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="106" id="Wgz-8c-qMW"/>
+                            <constraint firstItem="T7s-Jk-RsN" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="jXK-fY-tvw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="iEL-hI-eTV" secondAttribute="bottom" constant="295" id="yae-9J-gAS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="campoUITextField" destination="T7s-Jk-RsN" id="ACZ-A5-FfH"/>
+                        <outlet property="mostraValoriTableView" destination="iEL-hI-eTV" id="IiL-XR-bIh"/>
+                        <segue destination="9zU-13-Xe1" kind="unwind" identifier="tornaEx1" unwindAction="tornaIndietroUnwindWithSegue:" id="MAn-2I-tGF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="9zU-13-Xe1" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-28.169014084507044"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
